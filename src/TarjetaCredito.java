@@ -19,7 +19,7 @@ public class TarjetaCredito extends MedioPago {
 
     public void setNumeroTarjeta(String numeroTarjeta) {
         // Validación básica para el número de tarjeta (puede ser más compleja según el formato esperado)
-        if (!numeroTarjeta.matches("/^\\d{16}/gm")) {
+        if (!numeroTarjeta.matches("^\\d{16}$")) {
             throw new IllegalArgumentException("El número de tarjeta debe tener 16 dígitos");
         }
         if (numeroTarjeta == null || numeroTarjeta.isBlank()) {

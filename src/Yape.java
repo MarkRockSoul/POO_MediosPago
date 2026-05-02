@@ -13,7 +13,7 @@ public class Yape extends MedioPago {
 
     public void setNumeroCelular(String numeroCelular) {
         // Validación básica para el número de celular (puede ser más compleja según el formato esperado)
-        if (!numeroCelular.matches("/^9\\d{8}/gm")) {
+        if (!numeroCelular.matches("^9\\d{8}$")) {
             throw new IllegalArgumentException("El número de celular debe comenzar con 9 y tener 9 dígitos en total");
         }
         if (numeroCelular == null || numeroCelular.isBlank()) {
