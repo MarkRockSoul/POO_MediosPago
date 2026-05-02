@@ -25,7 +25,7 @@ public class Yape extends MedioPago {
     @Override
     public boolean procesarPago() {
         // Simulamos el procesamiento del pago con Yape
-        System.out.printf("[Yape] enviando S/%.2f a %s (%s) a través del número %s%n", getMonto(), getTitular(), super.getMoneda(), getNumeroCelular());
+        System.out.printf("[Yape] enviando S/%.2f a %s (%s) a través del número %s%n", getMonto(), getTitular(), getMoneda(), getNumeroCelular());
         // Aquí podríamos agregar lógica específica para validar el pago, conectarnos a una API, etc.
         // Para este ejemplo, simplemente retornamos true para indicar que el pago fue exitoso
         System.out.println("[Yape] Pago procesado exitosamente via billetera digital.");
