@@ -44,6 +44,7 @@ public abstract class MedioPago {
 
     // Metodo compartido por todas las clases hijas para mostrar la información del pago
     public String mostrarInfoPago() {
+        // Utilizamos String.format para formatear la salida de manera clara y consistente
         return String.format("[%s] Pago de %.2f %s por %s", getClass().getSimpleName(), getMonto(), getMoneda(), getTitular());
     }
 
